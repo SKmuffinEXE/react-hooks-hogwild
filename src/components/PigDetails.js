@@ -1,9 +1,12 @@
 import React from 'react';
 
-function PigDetails() {
+function PigDetails({hog}) {
     return (
         <>
-            Ayy
+            <h3>Specialty: {hog.specialty}</h3>
+            <h3>Weight: {hog.weight}</h3>
+            <h3>Greased: {hog.greased ? "Yes" : "No"}</h3>
+            <h3>Highest Medal Achieved: {hog["highest medal achieved"]}</h3>
         </>
     );
 }

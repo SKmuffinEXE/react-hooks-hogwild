@@ -11,10 +11,10 @@ function Pigs({hog}) {
     }
 
     return (
-        <div onClick = {handleClick}>
+        <div onClick = {handleClick} className= "ui eight wide column">
             <h1>{hog.name}</h1>
             <img src = {hog.image}/>
-            {visible ? <PigDetails/> : null}
+            {visible ? <PigDetails hog={hog}/> : null}
                     
         </div>
     );
